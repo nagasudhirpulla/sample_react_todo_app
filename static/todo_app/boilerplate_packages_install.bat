@@ -1,0 +1,1 @@
+npm install --save @babel/core @babel/plugin-proposal-class-properties @babel/preset-env @babel/preset-react @fortawesome/fontawesome-free @types/react babel-core babel-loader babel-plugin-transform-runtime babel-polyfill babel-preset-stage-0 react react-bootstrap react-dom react-select source-loader source-map-loader ts-loader typescript webpack webpack-cli webpack-dev-server

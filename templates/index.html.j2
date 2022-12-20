@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+</head>
+
+<body>
+    <div id="root" class="container-fluid"></div>
+    {# <link rel="stylesheet" href="{{ url_for('static', filename='todo_app/node_modules/bootstrap/dist/css/bootstrap.min.css') }}"/> #}
+    {# <script type="application/javascript" src="{{ url_for('static', filename='todo_app/node_modules/toastr/build/toastr.min.js') }}"></script> #}
+    <script type="application/javascript" src="{{ url_for('static', filename='todo_app/node_modules/react/umd/react.production.min.js') }}"></script>
+    <script type="application/javascript" src="{{ url_for('static', filename='todo_app/node_modules/react-dom/umd/react-dom.production.min.js') }}"></script>
+    <script type="application/javascript" src="{{ url_for('static', filename='todo_app/dist/bundle.todo_app.js') }}"></script>
+    
+    <style>
+        .basic-multi-select{
+            width: 50%;
+            display: inline-block;
+            margin-right:1em;
+        }
+        
+        .viol_rows_table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        input,
+        textarea {
+            border: none;
+            resize: vertical;
+        }
+        
+        body,
+        div,
+        table,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        th,
+        td,
+        p {
+            font-family: "Calibri";
+        }
+        
+        a.comment-indicator:hover+comment {
+            background: #ffd;
+            position: absolute;
+            display: block;
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+        
+        a.comment-indicator {
+            background: red;
+            display: inline-block;
+            border: 1px solid black;
+            width: 0.5em;
+            height: 0.5em;
+        }
+        
+        comment {
+            display: none;
+        }
+        
+        @media print
+        {    
+            .no-print, .no-print *
+            {
+                display: none !important;
+            }
+        }
+    </style>
+</body>
+
+</html>
